@@ -67,6 +67,21 @@ console.log(10!=9)
 
 //operadores logicos
 // && = and so e true se os dois lados forem verdadeiros. || = or  para ser true um lado como true e suficiente. ! = not inverte a compaacao se for true vira false e assim por diante.
+console.log(true && true)
+console.log(true && false)
+
+console.log (5 >2 && 2<10)
+console.log (5<2 && 9<10)
+
+console.log ( 5>10 || 10>9)
+console.log(!true)
+
+
+//EMPTY VALUE UNDEFINED  E NULL
+console.log(typeof null, typeof undefined)
+console.log(null === undefined)
+console.log(null == undefined)// da true pois os dois nao tem nenhum valor
+
 
 
 
