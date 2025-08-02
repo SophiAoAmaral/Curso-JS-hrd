@@ -57,7 +57,7 @@ if( m > 10){
     console.log('E menor')
 }
  
-let user = "joao"
+let user = "k"
 
 if(user === "SOPHIA"){
     console.log('SEU NOME E SOPHIA')
