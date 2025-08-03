@@ -163,3 +163,32 @@ for(let g = 20; g>10; g--){
     }
 }
 //pulando uma execucao de loop
+//continue pode pular uma ou mais execucoes de loop
+
+for(let s= 0; s<10; s++){
+    //operador de resto = %
+    if(s % 2 === 0){
+      console.log("Numero par!")
+      continue;
+    }
+    console.log(s)
+}
+
+//ESTRUTURA SWITH pode ser utilizado para a orgaizacao de if/else
+//cada if seria um case e cada um deve ter break
+//e o default e como se fosse o else que caso nenhum case fosse executado ele sera
+const job = 'Advogado'
+
+switch(job){
+    case 'Programador':
+        console.log('Voce e programador')
+        break
+    case 'Advogado':
+        console.log('Voce e um Advogado')
+        break
+    case 'Engenheiro':
+        console.log('Voce e um engenheiro')
+        break
+    default:
+        console.log('Profissao nao encontrada')
+}//switch errados nao possuem os BREAKS
