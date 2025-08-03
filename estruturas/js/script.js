@@ -142,4 +142,24 @@ for(r; r>0; r=r-1 ){
     console.log(`O r esta diminuindo: ${r}`)
 }
 
-//identecao
+//identecao menor visualizacao de conteudo
+
+for (let i = 0; i < 10; i++) {
+    if (i * 2 > 10) {
+        console.log(`Maior que 10! ${i}`)
+    } else {
+        if (i / 2 === 0) {
+            console.log('deu 0')
+        }
+    }
+}
+
+//Forcando a saida de um lopping BREAK
+for(let g = 20; g>10; g--){
+    console.log(`O valor de g:${g}`);
+    if(g===15){
+        console.log(`o g e 15!`)
+        break
+    }
+}
+//pulando uma execucao de loop
