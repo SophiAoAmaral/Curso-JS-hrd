@@ -192,3 +192,7 @@ switch(job){
     default:
         console.log('Profissao nao encontrada')
 }//switch errados nao possuem os BREAKS
+
+
+
+
