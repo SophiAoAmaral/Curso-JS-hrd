@@ -101,4 +101,7 @@ console.log(raizQuadrada2(3))
 
 const helloWord = () => console.log('Hello Word')
 
-console.log(helloWord())
+console.log(helloWord());
+helloWord()
+
+//
