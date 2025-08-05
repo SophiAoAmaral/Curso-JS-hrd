@@ -104,4 +104,24 @@ const helloWord = () => console.log('Hello Word')
 console.log(helloWord());
 helloWord()
 
-//
+//parametro opcional
+
+const multiplication = function(m,n){
+    if(n === undefined){
+        return m * 2
+    } else{
+        m * n
+    }
+}
+console.log(multiplication(5))
+console.log(multiplication(4,4))
+
+const greeting = (name) =>{
+    if(!name){
+        console.log("Ola")
+        return
+    }
+    console.log(`Ola ${name}`)
+}
+greeting()
+greeting("Sophia")
