@@ -125,3 +125,9 @@ const greeting = (name) =>{
 }
 greeting()
 greeting("Sophia")
+
+const passandoUmNome = (nome) =>{
+    console.log(`Ola ${nome}`)
+}
+
+passandoUmNome("SASA")
