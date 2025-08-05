@@ -54,7 +54,7 @@ let m = 10
 function escopoAninhado(){
     let m = 20
     if(true){
-        
+
         let m = 30
 
     if (true){
@@ -69,3 +69,36 @@ console.log(m)
 escopoAninhado()
 
 console.log(m)
+
+//arrow function e uma funcao anonima entao precisa estar dentro de uma variavel
+
+const testArrow = () => {
+    console.log("Esta é uma Arrow Function")
+}
+testArrow();
+
+const parOuImpar = (n) =>{
+    if(n%2 === 0){
+        console.log('Par');
+        return
+    }
+    console.log('Impar')
+}
+parOuImpar(10)
+parOuImpar(5)
+
+//sintaxe mais simples da arrow function
+
+const raizQuadrada = (x) =>{
+    return x*x;
+}
+console.log(raizQuadrada(4))
+
+const raizQuadrada2 = (x) => x*x
+
+console.log(raizQuadrada2(5))
+console.log(raizQuadrada2(3))
+
+const helloWord = () => console.log('Hello Word')
+
+console.log(helloWord())
