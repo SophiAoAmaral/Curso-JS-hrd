@@ -116,18 +116,39 @@ const multiplication = function(m,n){
 console.log(multiplication(5))
 console.log(multiplication(4,4))
 
-const greeting = (name) =>{
-    if(!name){
-        console.log("Ola")
-        return
-    }
-    console.log(`Ola ${name}`)
-}
-greeting()
-greeting("Sophia")
+  //const greeting = (name) =>{
+   // if(!name){
+       // console.log("Ola")
+       // return
+   // }
+    //console.log(`Ola ${name}`)
+//}
+//greeting()
+//greeting("Sophia")
 
 const passandoUmNome = (nome) =>{
     console.log(`Ola ${nome}`)
 }
 
 passandoUmNome("SASA")
+
+//Argumentos com valor default
+const customGreeting = (name, greet = "ola") =>{
+    return `${greet}, ${name}`
+};
+console.log(customGreeting("Sophia"));
+console.log(customGreeting("Joao", "Bom dia"))
+
+const repeatText =(text, repeat = 2) =>{
+    for(let i = 0; i<repeat;i++)
+        console.log(text)
+}
+repeatText("Agora reprete 5 vezes", 5)
+
+//TESTE
+ const testAula = (pessoa, idade= 10) =>{
+    return `${idade} ${pessoa}`
+ }
+
+ console.log(testAula(" anos essa e sua idade"))
+ console.log(testAula("25", "Sophia"))
