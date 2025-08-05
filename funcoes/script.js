@@ -152,3 +152,25 @@ repeatText("Agora reprete 5 vezes", 5)
 
  console.log(testAula(" anos essa e sua idade"))
  console.log(testAula("25", "Sophia"))
+
+
+//Closure= conjunto de funçoes onde tem o reaproveitamento do escopo interno
+function someFunction(){
+    let txt = "Alguma coisa"
+
+    function display(){
+        console.log(txt)
+    }
+    display()
+}
+someFunction()
+
+const multiplicationClosure = (n) => {
+    return (m) =>{
+        return n* m;
+    }
+}
+const c1 = multiplicationClosure(5)
+const c2 = multiplicationClosure(10)
+console.log(c1)
+console.log(c2)
