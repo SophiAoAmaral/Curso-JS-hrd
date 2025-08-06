@@ -174,3 +174,28 @@ const c1 = multiplicationClosure(5)
 const c2 = multiplicationClosure(10)
 console.log(c1)
 console.log(c2)
+
+//recursao permite a funçao se autoinvocar continualmente
+const untilTen = (n, m) =>{
+    if(n<10){
+        console.log("Afunçãõ parou de executar")
+    }else{
+        const x = n -m
+        console.log(x)
+        untilTen(x, m)
+    }
+}
+untilTen(100, 5)// vai ir de 5 em 5 ate chegar no 10
+
+
+function factorial(x){
+    if(x === 0){
+        return 1
+        
+    }else{
+        return x * factorial(x -1)
+    }
+}
+const num = 6
+const result = factorial(num)
+console.log(`O factorial dp numero ${num} é ${result}`)
