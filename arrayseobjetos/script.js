@@ -62,3 +62,23 @@ delete car.km; //exclui o km
 //Os arrays são utilizados como listas de itens,
 //Já os objetos são utilizados para descrever um item
 
+
+
+//-7 mais sobre objetos
+const obj ={
+    a:"teste",
+    b:true,
+}
+console.log(obj instanceof Object)
+
+const obj2 ={
+    c:[]
+}
+
+Object.assign(obj2, obj)//pega os valores da outra propriedade
+console.log(obj)
+
+//podemos verfificar as propriedades de um objeto pelo metodo keys
+console.log(Object.keys(obj))
+console.log(Object.keys(obj2))
+console.log(Object.keys(car))
