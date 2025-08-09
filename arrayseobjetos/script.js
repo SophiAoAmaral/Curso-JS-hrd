@@ -82,3 +82,36 @@ console.log(obj)
 console.log(Object.keys(obj))
 console.log(Object.keys(obj2))
 console.log(Object.keys(car))
+
+//Mutability isso acontece qnd criamos um obj apartir de outro
+//const b = a
+//console.log(a)
+//console.log(b)
+//console.log(a===b)
+
+//a.age = 31;
+
+//onsole.log(a)
+//console.log(b)
+
+//loops em arrays percorrer arrays atraves de estruturas de repeticao
+const users = ["Sophia", "Kayky", "Matheus", "Miguel"]
+
+for(let i = 0;i <users.length;i++){
+    console.log(`Listando os usuarios: ${users[i]}`);// esse i faz percorrer o index do elemento
+}
+
+//metodo array:push e pop
+//com o push add um item ao fim do array
+//com o pop temos a remocao de um elemento no fim do array
+const array = ["A", "B", "C"];
+array.push("D");//adicionou
+console.log(array);
+console.log(array.length);
+array.pop();
+console.log(array);
+
+const itemRemovido = array.pop();//vai guardar o item removido
+console.log(itemRemovido);
+console.log(array);
+//shit e unshift
