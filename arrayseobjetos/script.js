@@ -128,5 +128,12 @@ console.log(letters)
 
 //indexOf e lastIndexOf
 //indexOf nos permite encontrar o indice de um elemento, que passamos como argumento para o metodo
-//lastIndexOf e utilizado quandoo ha repeticoes de elementos e precisamos do indice da outra ocorrencia
+//lastIndexOf e utilizado quando ha repeticoes de elementos e precisamos do indice da outra ocorrencia
 
+const myElements = ["Morango","Abacate", "Maça", "Pera", "Abacate"]
+
+
+console.log(myElements.indexOf("Morango"))
+console.log(myElements.lastIndexOf("Abacate"))//aqui ele mostrou o abacate q esta em ultimo
+console.log(myElements.indexOf("Abacate"))//e aqui ele mostrou oq q esta no começo
+//quando o eleemnto ao existe ele devove um -1 pq ele nao encontrou
