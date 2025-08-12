@@ -137,3 +137,14 @@ console.log(myElements.indexOf("Morango"))
 console.log(myElements.lastIndexOf("Abacate"))//aqui ele mostrou o abacate q esta em ultimo
 console.log(myElements.indexOf("Abacate"))//e aqui ele mostrou oq q esta no começo
 //quando o eleemnto ao existe ele devove um -1 pq ele nao encontrou
+
+
+//slice extrai um array menor de um array maior
+const testeSlice = ["a", "b", "c", "d", "e", "f"]
+const subArray = testeSlice.slice(2, 4)// pq apareceu c e d ? ele trouxe ate chegar antes do 4
+console.log(subArray)
+console.log(testeSlice)
+const subArray2 = testeSlice.slice(2,4+1)//com o +! ele mostra ate a letra 4 sem pulala
+console.log(subArray2)
+const subArray3 = testeSlice.slice(3)
+console.log(subArray3)// mostra todos os elementos apartir do index informado
