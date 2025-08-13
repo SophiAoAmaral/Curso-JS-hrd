@@ -229,4 +229,18 @@ console.log(fraseDeCompra)
 //repeat repete o texto n vzes
 
 const palavra ="testanto "
-console.log(palavra.repeat(5))
+console.log(palavra.repeat(5))// vai repetir 5 vezes
+
+//Rest Operator e caracterizado pelo simbolo ... pode dar atributod infintos
+
+const somaInfinita =(...args)=>{
+    let total = 0
+
+    for(let i=0; i<args.length; i++){
+        total += args[i]
+    }
+    return total
+
+}
+console.log(somaInfinita(1, 2 ,3))
+console.log(somaInfinita(12, 2121,3123, 1312231, 31231, 312))
