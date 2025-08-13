@@ -148,3 +148,35 @@ const subArray2 = testeSlice.slice(2,4+1)//com o +! ele mostra ate a letra 4 sem
 console.log(subArray2)
 const subArray3 = testeSlice.slice(3)
 console.log(subArray3)// mostra todos os elementos apartir do index informado
+
+
+//forEach
+//ele percorre cada um dos elementos do array
+
+const nums = [1, 2, 3, 4, 5]
+nums.forEach((numero) =>{
+    console.log(`O numero é ${numero}`)
+}
+)
+
+const posts =[
+    {title:"Primeiro Poste", category:"PHP"},
+    {title:"Segundo Poste", category:"JS"},
+    {title:"Terceiro Poste", category:"PY"}
+
+]
+posts.forEach((post)=>{ //no começo colocamos o nome da const q criamos no conjunto  e nos (colocamos o nome dos itens no individual ex :titulos.forEach seria(titulo dentro das () ))
+    console.log(`Exibindo post: ${post.title} da categoria ${post.category} `)
+})
+
+
+const myIdents =[
+    {nome:"Sophia", idade:19},
+    {nome:"Ana", idade:19},
+    {nome:"Camila", idade:19},
+
+
+]
+myIdents.forEach((ident) => {
+    console.log(`Seu nome: ${ident.nome} e voce tem ${ident.idade} anos.`)
+});
