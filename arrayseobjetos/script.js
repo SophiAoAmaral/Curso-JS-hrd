@@ -196,3 +196,37 @@ if(brands.includes("Kia")){
 const revertText =[1, 2, 3, 4, 5, 6]
 revertText.reverse()
 console.log(revertText)
+
+//METODOS DE STRING
+
+//TRIM remove tudo que nao é um texto em uma string como espaços, caracateres especiais o metodo nao modifica  o texto original tem q criar uma string para exibi-la
+
+const trimTeste = "    testando \n  "
+console.log(trimTeste)
+console.log(trimTeste.trim())
+console.log(trimTeste.length)
+console.log(trimTeste.trim().length)
+
+//padStart insere um texto no começo da string
+const testePadStart ="1"
+const newNumber =testePadStart.padStart(4, "0") //primeiro e o tanto de caratcteres q ele vai ter por exemplo vai ter 4 0 na frente do um
+console.log(newNumber)
+const testPadEnd = newNumber.padEnd(10, "0")
+console.log(testPadEnd)
+
+//split devide a string em um array e cada elemento deve ser determinado por um separador comum [; , ]
+const frase = "O rato roeu a roupa do rei de Roma"
+const arrayDaFrase =frase.split(" ")// utilizou o espaço
+console.log(arrayDaFrase)
+
+//join une um array numa string
+const testeJoin =arrayDaFrase.join(" ") 
+console.log(testeJoin)
+const itensParaComprar=["Uva", "Mouse", "Monitor"]
+const fraseDeCompra = ` Precisamos comprar ${itensParaComprar.join(", ")}`
+console.log(fraseDeCompra)
+
+//repeat repete o texto n vzes
+
+const palavra ="testanto "
+console.log(palavra.repeat(5))
