@@ -180,3 +180,15 @@ const myIdents =[
 myIdents.forEach((ident) => {
     console.log(`Seu nome: ${ident.nome} e voce tem ${ident.idade} anos.`)
 });
+
+
+//metodo includes verifica se o array tem um elemento
+const brands = ["BMW", "Audi", "Fiat"]
+console.log(brands.includes("KIA"))// IRA DAR FALSE POIS NAO EXISTE ESSE ELEMENTO
+console.log(brands.includes("BMW"))
+
+if(brands.includes("Kia")){
+    console.log("Ha carros da marca BMW")
+}else{
+    console.log("nao a carros dessa marca")
+}
