@@ -192,3 +192,7 @@ if(brands.includes("Kia")){
 }else{
     console.log("nao a carros dessa marca")
 }
+//reverse inverte os elementos do array
+const revertText =[1, 2, 3, 4, 5, 6]
+revertText.reverse()
+console.log(revertText)
