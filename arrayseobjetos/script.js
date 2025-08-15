@@ -244,3 +244,62 @@ const somaInfinita =(...args)=>{
 }
 console.log(somaInfinita(1, 2 ,3))
 console.log(somaInfinita(12, 2121,3123, 1312231, 31231, 312))
+
+
+// for ..of estrutura de repetiçao
+
+const somaInfinita2 =(...args) =>{
+    let total = 0
+    for(num of args){
+        total += num
+    }
+
+    return total
+}
+console.log(somaInfinita2(1, 2, 3))
+console.log(somaInfinita2(1,2 ,3 ,3 , 34,22,4 ,4, 24, 24,2 ,2 ))
+
+//Destructuring em arrays permite deseestruturar algum dado, e possivel c riar variaveis a partir de suas propriedades
+
+const userDetail = {
+    firstName: "Sophia",
+    lastName: "Oliveira",
+    job:"Estudante"
+}
+
+const {firstName, lastName, job} = userDetail//Isso ja cria uma variavelo para cada item dalista
+
+console.log(firstName, lastName, job) //
+console.log(firstName)
+
+//renomeando as variaveis criadas
+const { firstName:primeiroNome} = userDetail
+
+console.log(primeiroNome)
+
+
+//esse metodo em arrays
+
+const myList = ["Aviao", "Submarino", "Carro", "Moto"]
+
+const[VeiculoA, veiculoB, veiculoC, veiculoD] = myList //cria o nome de cada index baseado no array
+
+console.log(VeiculoA, veiculoB, veiculoC, veiculoD)
+
+//JSON um dado em formato de texto, ut6ilizada para a comuniçao entre API e front end 
+//apenas aspas duplas e ele nao aceita coemntarios
+
+//criando um JSON
+
+const myJson = '{"name":"Sophia", "age" :19, "skillss":["PHP", "JavaScript", "Python"] }'
+
+console.log(myJson)//precisa converter para objeto javsScript
+//na mairoria das vezes e necessario convertter objetos para JSON ou um JSON para objetos
+//utiliza o objeto JSON e os metoddos stringify que transforma um objeto em JSON e o parse que transforma um JSON em objeto
+
+const myObject =JSON.parse(myJson)
+console.log(myObject)
+//adicionando uma nova propriedade
+myObject.isOpentoWork = true
+
+const myNewJson = JSON.stringify(myObject) // Transformou em JSON novamente
