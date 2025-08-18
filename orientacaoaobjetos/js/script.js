@@ -34,3 +34,20 @@ console.log(pessoa.getNome())
 pessoa.setNome("Kayky")
 
 console.log(pessoa.getNome())
+
+
+//Prototype
+//fallback quando uma propriedade nao existe em um dado/objeto, ela é procurada no seu ancestral
+
+const text = "asd"
+
+console.log(Object.getPrototypeOf(text))// mostra inumeras origens
+
+const bool = true;
+
+console.log(Object.getPrototypeOf(bool))
+
+const arr = [];
+console.log(arr.length)
+console.log(Object.getPrototypeOf(arr))
+
