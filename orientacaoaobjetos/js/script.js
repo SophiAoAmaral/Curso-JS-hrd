@@ -63,3 +63,19 @@ console.log(mySecondObject)
 console.log(mySecondObject.a)
 console.log(Object.getPrototypeOf(mySecondObject) == myObject)
 
+//Classes basicas
+const cachorro ={
+    raca: null,
+    patas:4
+}
+const pastorAlemao = Object.create(cachorro)
+pastorAlemao.raca = "Pastor Alemao"
+
+console.log(pastorAlemao)
+
+console.log(pastorAlemao.patas)
+
+const bulldog = Object.create(cachorro)
+bulldog.raca = "Bulldog"
+
+//funcao como classe
