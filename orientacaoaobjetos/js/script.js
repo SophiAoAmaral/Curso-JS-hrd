@@ -153,3 +153,21 @@ class Blush{
 const marsala = new Blush("Marsala", 5)
 console.log(marsala)
 marsala.descreverBlush()
+
+
+//override
+class Humano{
+    constructor(nome, idade){
+        this.nome= nome
+        this.idade = idade
+    }
+}
+const matheus = new Humano("Maheus", 31)
+console.log(matheus)
+
+Humano.prototype.idade = "Nao definida"
+
+console.log(matheus.idade)
+
+console.log(Humano.prototype.idade)
+
