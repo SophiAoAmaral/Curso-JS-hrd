@@ -238,3 +238,8 @@ class Lobo extends Mamifero{
 }
 const shark =new Lobo(4, "Shark")
 console.log(shark)
+//instanceof que verifica se o objeto é pai do outro
+
+console.log(shark instanceof Lobo)
+console.log(Lobo instanceof Mamifero)
+
