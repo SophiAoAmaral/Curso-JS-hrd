@@ -81,7 +81,7 @@ bulldog.raca = "Bulldog"
 //funcao como classe
 
 function criarCachorro(nome, raca){
-    const cachorro = Object.create(())
+    const cachorro = Object.create({})
 
     cachorro.nome = nome
     cachorro.raca
@@ -89,3 +89,17 @@ function criarCachorro(nome, raca){
 }
 const lunna = criarCachorro("Lunna", "YorkShire")
 console.log(lunna)
+
+//funçoes como classe
+function Cachorro(nome, raca){
+    this.nome = nome
+    this.raca = raca
+
+}
+
+const husky = new Cachorro("Ozzy", "Husky")
+
+console.log(husky)
+
+//classes de função com metodos
+
