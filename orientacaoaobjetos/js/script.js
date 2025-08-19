@@ -79,3 +79,13 @@ const bulldog = Object.create(cachorro)
 bulldog.raca = "Bulldog"
 
 //funcao como classe
+
+function criarCachorro(nome, raca){
+    const cachorro = Object.create(())
+
+    cachorro.nome = nome
+    cachorro.raca
+    return cachorro
+}
+const lunna = criarCachorro("Lunna", "YorkShire")
+console.log(lunna)
