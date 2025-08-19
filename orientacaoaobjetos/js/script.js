@@ -101,5 +101,55 @@ const husky = new Cachorro("Ozzy", "Husky")
 
 console.log(husky)
 
-//classes de função com metodos
+//metodos na funçaõ construtora
+Cachorro.prototype.uivar = function(){
+    console.log("AUUUUU!") // isso adiciona um metodo a funçao criada antigamete
+}
 
+husky.uivar()
+
+//Classes ES6  NOVA FORMA DE CONSTRUIR 
+class CachorroClasse{
+    constructor(nome, raca){
+        this.nome = nome
+        this.raca= raca
+    }
+}
+const blissa = new CachorroClasse("Blissa", "Podle")
+console.log(blissa)
+
+//nao podemos add propriedades diretamente as classes, isso precisa ser feito ao inicia-la ou via prototype;
+//esses metodos podem utilizar o this
+
+class Caminhao{
+    constructor(eixos, cor){
+        this.eixos = eixos
+        this.cor = cor
+    }
+    descreverCaminhao(){
+        console.log(`Este caminhao tem ${this.eixos} eixos e é da cor ${this.cor}`)
+    }
+}
+
+const scania =new Caminhao(6, "Vermelho")
+console.log(scania)
+scania.descreverCaminhao()
+
+const volvo = new Caminhao(7, "Preto")
+console.log(volvo)
+volvo.descreverCaminhao()// coloca a frase mesmo apos o constructor
+
+
+class Blush{
+    constructor(tom, numero){
+        this.tom= tom
+        this.numero = numero
+    }
+    descreverBlush(){
+        console.log(`O tom do blush é ${this.tom} e sua numeração é ${this.numero}`)
+    }
+}
+
+const marsala = new Blush("Marsala", 5)
+console.log(marsala)
+marsala.descreverBlush()
