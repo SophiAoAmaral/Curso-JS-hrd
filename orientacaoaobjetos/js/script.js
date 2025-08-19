@@ -196,12 +196,30 @@ console.log(boieng[pilotos])
 //getters e setters get é um metodo utilizado para exibir o valor de alguma propriedade
 //set é utilizado para alternar o valor
 class Post{
+
         constructor(titulo, descricao, tags){
         this.titulo =titulo
         this.descricao = descricao
         this.tags =tags
         }
+
         get exibirTitulo(){
             return `Voce esta lendo ${this.titulo}`
         }
+
+        get exibirDescricao(){
+            return ` ${this.descricao}`
+        }
+
+        set adicionarTags(tags){
+            const tagsArrarys = tags.split(", ")
+            this.tags =tagsArrarys
+        }
 }
+const myPost = new Post("Algum post", "É um post de programação");
+
+console.log(myPost.exibirTitulo)
+console.log(myPost.exibirDescricao)
+
+myPost.adicionarTags ="programaçaõ, javascrip, js"
+console.log(myPost)
