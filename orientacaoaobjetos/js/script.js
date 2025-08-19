@@ -171,3 +171,25 @@ console.log(matheus.idade)
 
 console.log(Humano.prototype.idade)
 
+//symbol é utilizado com classes assim é ossivel criar ua propriedade unica e imutavel que nao muda o valor
+
+class Aviao {
+    constructor(marca, turbinas){
+        this.marca =marca
+        this.turbinas = turbinas
+    }
+}
+const asas = Symbol()
+const pilotos = Symbol()// nao deixa o valor da info mudar ela fica imultavel
+Aviao.prototype[asas] = 2;
+
+Aviao.prototype[pilotos] = 3;
+
+const boieng = new Aviao("Boieng" , 10)
+
+console.log(boieng)
+
+console.log(boieng[asas])
+
+console.log(boieng[pilotos])
+
