@@ -223,3 +223,18 @@ console.log(myPost.exibirDescricao)
 
 myPost.adicionarTags ="programaçaõ, javascrip, js"
 console.log(myPost)
+
+//herança a palavra extends que tras a herança do outro objeto
+class  Mamifero{
+    constructor(patas){
+        this.patas = patas
+    }
+}
+class Lobo extends Mamifero{
+    constructor(patas, nome){
+        super(patas, patas)
+        this.nome=nome
+    }
+}
+const shark =new Lobo(4, "Shark")
+console.log(shark)
