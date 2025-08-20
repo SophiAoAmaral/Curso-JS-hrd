@@ -65,6 +65,16 @@ checkNumber(a)
 let x= 10
 
 if(x!= 11){
-    throw new Error("o valor de x nao pode ser diferente de 11!")
+   // throw new Error("o valor de x nao pode ser diferente de 11!")
 }//cria um erro no console o erro
 
+
+//try catch tentamos executar algo em try e se um erro ocorrer ele cai no bloco do catch
+
+try{
+    const soma = x+ y
+} catch(error){
+    console.log(`Erro no programa: ${error}`)
+}
+
+//o finally é uma instrução que vai depois do blco try catch ela e´executada independendte de haver erro ou nao em try
