@@ -60,3 +60,11 @@ checkNumber("")
 checkNumber({})
 checkNumber(a)
 
+//exceptions sao erros que nos geramos no programa
+
+let x= 10
+
+if(x!= 11){
+    throw new Error("o valor de x nao pode ser diferente de 11!")
+}//cria um erro no console o erro
+
