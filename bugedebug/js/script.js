@@ -78,3 +78,16 @@ try{
 }
 
 //o finally é uma instrução que vai depois do blco try catch ela e´executada independendte de haver erro ou nao em try
+try{
+    const value = checkNumber("asd")
+    if(!value){
+        throw new Error("Valores Invaidos");
+    }
+
+} catch(error){
+    console.log(`Opa, acconteceu um problema:${error}`);
+} finally{
+    console.log("O codigo foi executado")
+}
+
+//assertions
