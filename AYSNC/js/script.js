@@ -47,3 +47,24 @@ Promise.resolve(4 *"asd")
 
 
 //rejeiçaõ
+
+function checkNumber(n){
+    return new Promise.((resolve, reject ) =>{
+
+        if(n>10){
+            resolve(`O numero é maior que 10`)
+        }else{
+            reject(new Error("Numero muito baixo"))
+        }
+
+
+    })
+}
+
+const a = checkNumber(20)
+
+const b = checkNumber(10)
+
+
+a.then((v) => console.log(`O resultado é ${v}
+`)).catch((err) => console.log(`Um erro ocorreu: ${err}`))
