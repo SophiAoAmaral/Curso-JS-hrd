@@ -21,3 +21,15 @@ setInterval(function(){
 
 
 console.log("Ainda nao começou 2")
+
+
+//Promise
+
+const promessa = Promise.resolve(5+5)//ele vai tentar executar o codico que esta dentro das ()
+
+console.log("Algum codigo")
+
+promessa.then((value =>{
+    console.log(`A soma é ${value}`)
+    return value;
+}))
