@@ -91,3 +91,10 @@ try{
 }
 
 //assertions
+function checkArray(arr){
+    if(arr.length ===0){
+        throw new Error("o ARRAY precisa ter elementos")
+    }else{
+        console.log("o array tem ${arr.legth} elementos")
+    }
+}
