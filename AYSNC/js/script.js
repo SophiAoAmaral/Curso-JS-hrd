@@ -114,3 +114,18 @@ async function chamadaAsync() {
     const result = await resolveComDelay()
     console.log(`o resultado chegou: ${result}`)
 }//o await so é valido em funçoes assincrinas
+
+
+
+//generatoes
+
+function generator(){
+    yield 1;
+    yield 2
+}
+
+const gen = generator()
+
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
