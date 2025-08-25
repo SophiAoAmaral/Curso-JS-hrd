@@ -68,3 +68,32 @@ const b = checkNumber(10)
 
 a.then((v) => console.log(`O resultado é ${v}
 `)).catch((err) => console.log(`Um erro ocorreu: ${err}`))
+b.then((v) => console.log(`O resultado é ${v}
+`)).catch((err) => console.log(`Um erro ocorreu: ${err}`))
+
+//resolvendo varias Promises
+
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(function(){
+        resolve(10)
+    }, 1000)
+})
+const p2 =  new Promise.resolve(10+10)
+const p3 =  new Promise(resolve, (reject)=>{
+    if(30>10){
+        resolve(30)
+    }else{
+        reject("erro")
+    }
+});
+Promise.all([p1, p2,p3]).then((values)=>console.log(values))
+
+
+//async functions sao fuçoes que retornam Promises
+
+async function  somarComDelay(a, b){
+    return a + b;
+}
+somarComDelay(2,4).then((value) =>{
+    console.log(`O valor da soma é ${value}`)
+})
