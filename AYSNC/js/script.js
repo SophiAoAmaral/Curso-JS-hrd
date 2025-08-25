@@ -97,3 +97,20 @@ async function  somarComDelay(a, b){
 somarComDelay(2,4).then((value) =>{
     console.log(`O valor da soma é ${value}`)
 })
+
+
+//await
+//serve para aguardar o resltado de uma async functioon
+
+function resolveComDelay(){
+    return new Promise(resolve =>{
+        setTimeout(()=>{
+            resolve("Resolveu a Promise")
+        },2000)
+    })
+}
+async function chamadaAsync() {
+    console.log("Chamando a Promise, e esperando o resultado")
+    const result = await resolveComDelay()
+    console.log(`o resultado chegou: ${result}`)
+}//o await so é valido em funçoes assincrinas
