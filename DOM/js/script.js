@@ -99,4 +99,13 @@ console.log(footer.offsetHeight)
 console.log(footer.clientHeight)
 console.log(footer.clientWidth)
 
+//posiçaõ do elemento
 
+const product1 = products[0]
+console.log(product1.getBoundingClientRect())
+
+
+//estilos com JS
+
+mainContainer.style.color = "orange"
+mainContainer.style.backgroundColor ="pink"
