@@ -109,3 +109,10 @@ console.log(product1.getBoundingClientRect())
 
 mainContainer.style.color = "orange"
 mainContainer.style.backgroundColor ="pink"
+
+
+//alterando estilo de varios elementos
+
+for(const li of listItems){
+    li.style.backgroundColor ="pink"
+}
