@@ -61,6 +61,12 @@ const li = document.createElement("li")
 
 navLinks.appendChild(li)
 
+const produtos=document.querySelector("main div")
+const p3 = document.createElement("p")
+p3.textContent = "mais um paragrafo"
+
+produtos.appendChild(p3)
+
 
 //replaceChild
 
@@ -69,4 +75,6 @@ h2.textContent = "Meu novo titulo!"
 
 header.replaceChild(h2,title)
 
+
+//creattEXTnODE
 
