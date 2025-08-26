@@ -11,4 +11,4 @@ console.log(document.body.childNodes[1].textContent)
 let listItems = document.getElementsByTagName("li")
 
 
-console.log(listItems)
+console.log(listItems);
