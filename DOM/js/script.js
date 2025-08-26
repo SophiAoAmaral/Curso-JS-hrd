@@ -18,3 +18,12 @@ console.log(listItems);
 
 
 let title = document.getElementById("title")
+
+console.log(title)
+
+
+//selecionando por classes
+
+let products = document.getElementsByClassName("product")
+
+console.log(products)
