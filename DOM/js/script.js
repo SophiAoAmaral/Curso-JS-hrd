@@ -27,3 +27,14 @@ console.log(title)
 let products = document.getElementsByClassName("product")
 
 console.log(products)
+
+
+//selecionano por querySelectorAll CSS
+
+let productsQuery = document.querySelectorAll(".product")
+console.log(productsQuery)
+
+
+const mainContainer = document.querySelector("#main-container")
+
+console.log(mainContainer)
