@@ -81,3 +81,14 @@ const myText = document.createTextNode("Agora vamos colocar mais um titulo")
 const h3 = document.createElement("h3")
 h3.appendChild(myText)
 mainContainer.appendChild(h3)
+
+
+//trabalhando com atributos
+
+const firstLink = navLinks.querySelector("a")// vai pegar o primeiro elemento
+
+firstLink.setAttribute("href", "https://www.google.com")
+firstLink.setAttribute("class", "google")
+firstLink.setAttribute("target", "_blanck")
+
+
