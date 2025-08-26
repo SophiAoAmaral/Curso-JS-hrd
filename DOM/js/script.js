@@ -12,3 +12,9 @@ let listItems = document.getElementsByTagName("li")
 
 
 console.log(listItems);
+
+
+//selecionando por id
+
+
+let title = document.getElementById("title")
