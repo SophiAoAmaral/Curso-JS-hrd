@@ -38,3 +38,17 @@ console.log(productsQuery)
 const mainContainer = document.querySelector("#main-container")
 
 console.log(mainContainer)
+
+
+//insertBefore
+
+
+const p = document.createElement("p")
+
+const header = title.parentElement// o title ja foi selecionado antes
+
+header.insertBefore(p, title)
+
+const p2= document.createElement("div")
+const footer = document.querySelector(".footer")
+footer.insertBefore(p2, footer.firstChild)
