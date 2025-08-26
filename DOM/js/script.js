@@ -109,7 +109,8 @@ console.log(product1.getBoundingClientRect())
 
 mainContainer.style.color = "orange"
 mainContainer.style.backgroundColor ="pink"
-
+mainContainer.style.border = "1px solid black"
+mainContainer.style.padding ="20px"
 
 //alterando estilo de varios elementos
 
