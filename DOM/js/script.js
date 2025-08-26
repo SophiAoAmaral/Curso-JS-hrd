@@ -77,4 +77,7 @@ header.replaceChild(h2,title)
 
 
 //creattEXTnODE
-
+const myText = document.createTextNode("Agora vamos colocar mais um titulo")
+const h3 = document.createElement("h3")
+h3.appendChild(myText)
+mainContainer.appendChild(h3)
