@@ -92,3 +92,11 @@ firstLink.setAttribute("class", "google")
 firstLink.setAttribute("target", "_blanck")
 
 
+//altura e largura
+
+console.log(footer.offsetWidth)
+console.log(footer.offsetHeight)
+console.log(footer.clientHeight)
+console.log(footer.clientWidth)
+
+
