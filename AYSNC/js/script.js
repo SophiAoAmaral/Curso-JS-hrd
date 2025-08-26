@@ -43,27 +43,27 @@ Promise.resolve(4 *"asd")
         throw new Error("valores invalidos")
     }
 })
-.catch((err) = > console.log(`Um erro ocorreu:${err}`))
+.catch((err) => console.log(`Um erro ocorreu:${err}`))
 
 
 //rejeiçaõ
 
-function checkNumber(n){
-    return new Promise.((resolve, reject ) =>{
+//function checkNumber(n){
+    //return new Promise. ((resolve, reject ) =>{
 
-        if(n>10){
-            resolve(`O numero é maior que 10`)
-        }else{
-            reject(new Error("Numero muito baixo"))
-        }
+        //if(n>10){
+          //  resolve(`O numero é maior que 10`)
+       // }else{
+          /// reject(new Error("Numero muito baixo"))
+      // }
 
 
-    })
-}
+   // })
+//}
 
-const a = checkNumber(20)
+//const a = checkNumber(20)
 
-const b = checkNumber(10)
+//const b = checkNumber(10)
 
 
 a.then((v) => console.log(`O resultado é ${v}
