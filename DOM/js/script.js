@@ -52,3 +52,13 @@ header.insertBefore(p, title)
 const p2= document.createElement("div")
 const footer = document.querySelector(".footer")
 footer.insertBefore(p2, footer.firstChild)
+
+
+//appendChild
+
+const navLinks = document.querySelector("nav ul")
+const li = document.createElement("li")
+
+navLinks.appendChild(li)
+
+
