@@ -77,3 +77,16 @@ mouse.addEventListener("dblclick", ()=>{
     console.log("pressionou duas vezes botao")
     mouse.style.backgroundColor = "pink"
 })
+
+//movimento do mouse
+
+
+document.addEventListener("mousemove", (e) =>{
+    //console.log(`Posição do eixo x ${e.x} `)
+})
+document.addEventListener("mousemove", (e) =>{
+    //console.log(`Posição do eixo y ${e.y} `)
+})
+
+
+//scroll
