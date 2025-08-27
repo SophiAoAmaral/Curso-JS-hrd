@@ -114,3 +114,14 @@ input.addEventListener("blur", (e) =>{
 
     
 })
+
+//evento de carregamento da pagina
+
+window.addEventListener("load", ()=>{
+    console.log("a pagina carregou!")
+})
+
+window.addEventListener("beforeuload", (e)=>{
+
+    e.preventDefault()
+    e.returnValue = "teste";})
