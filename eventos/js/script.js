@@ -30,3 +30,16 @@ const myTitle = document.querySelector("#my-title")
 myTitle.addEventListener("click", (event)=>{
     console.log|(event)
 })
+
+//propagacao
+
+const containerBtn = document.querySelector("#btn-container")
+const btnInsaideContainer = document.querySelector("#div-btn")
+
+containerBtn.addEventListener("click", () =>{
+    console.log("Evento1")
+})
+btnInsaideContainer.addEventListener("click", (e) =>{
+    e.stopPropagation()
+    console.log("Evento2")
+})
