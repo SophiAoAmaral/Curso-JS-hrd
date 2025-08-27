@@ -90,3 +90,27 @@ document.addEventListener("mousemove", (e) =>{
 
 
 //scroll
+
+window.addEventListener("scroll", (e) =>{
+     if(window.scrollY >200){
+        console.log("Passamos de 200px")
+     }
+})
+
+//evento de foco
+
+const input = document.querySelector("#my-input")
+
+input.addEventListener("focus", (e) =>{
+
+    console.log("entrou no input")
+
+    
+})
+
+input.addEventListener("blur", (e) =>{
+
+    console.log("saiu no input")
+
+    
+})
