@@ -62,3 +62,18 @@ document.addEventListener("keyup",(e)=>{
 document.addEventListener("keydown", (e)=>{
     console.log(`Apertou a tecla ${e.key}`)
 })
+
+//eventos de mouse
+
+const mouse = document.querySelector("#mouse")
+
+mouse.addEventListener("mousedown", ()=>{
+    console.log("pressionou botao")
+})
+mouse.addEventListener("mouseup", ()=>{
+    console.log("solto botao")
+})
+mouse.addEventListener("dblclick", ()=>{
+    console.log("pressionou duas vezes botao")
+    mouse.style.backgroundColor = "pink"
+})
