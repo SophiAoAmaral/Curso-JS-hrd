@@ -43,3 +43,11 @@ btnInsaideContainer.addEventListener("click", (e) =>{
     e.stopPropagation()
     console.log("Evento2")
 })
+
+//removendo evento ´padrao
+
+const a = document.querySelector("a")
+a.addEventListener("click", (e)=>{
+    e.preventDefault()
+    console.log("Nao alterou")
+})
