@@ -23,3 +23,10 @@ thrdBttn.addEventListener("click", ()=>{
     console.log("Evento removido")
     secondbtn.removeEventListener("click", imprimirMensagem)
 })
+//argumento do evento
+
+const myTitle = document.querySelector("#my-title")
+
+myTitle.addEventListener("click", (event)=>{
+    console.log|(event)
+})
