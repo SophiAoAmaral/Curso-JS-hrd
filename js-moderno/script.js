@@ -1,89 +1,117 @@
-// 1 -var let e const
+// // 1 -var let e const
 
-var x =10;
-var y = 2;
+// var x =10;
+// var y = 2;
 
-if(y>10){
-    var x = 12
-}// com var eel apaga o valor anterior
-
-
-let a = 10;
-let b = 12;
-if(b>21){
-    let a = 21
-}
-//nao sobresai o outro valor se der console.log aparecera o valor de dentro do if e o de fora
+// if(y>10){
+//     var x = 12
+// }// com var eel apaga o valor anterior
 
 
-
-//arrow functions
-const sum = function(a,b){
-    return a + b 
-}
-
-
-//com arrow
-
-const Arrowsum = (a, b) => a+b
-
-console.log(sum(5,5))
-console.log(Arrowsum(5,5));
-
-const greeting = (name) =>{
-
-
-    if(name) {
-        return `Hello ${name}`
-    }else{
-        return `Hello`
-    }
-}
-console.log(greeting("Sophia"));
-
-console.log(greeting());
-
-const user = {
-    name :"Theo", 
-    sayUserName(){
-        setTimeout(function(){
-            console.log(this);
-            console.log(`Username:${this.name}`)
-        },1000)
-    },
-    sayUserNameArrow(){
-        setTimeout(()=>{
-            console.log(this);
-            console.log(`Username:${this.name}`)
-
-        }, 2000)
-    }
-}
-
-//filter
-
-const arr = [1, 2, 3, 4, 5, 6]
-
-
-const highNumber = arr.filter((n) =>{
-
-    if(n>3){{
-        return n 
-    }}
-})
-
-console.log(highNumber)
+// let a = 10;
+// let b = 12;
+// if(b>21){
+//     let a = 21
+// }
+// //nao sobresai o outro valor se der console.log aparecera o valor de dentro do if e o de fora
 
 
 
-const users = [
-    {name:"Sophia", available:true},
-    {name:"Maria", available:false},
-    {name:"Joao", available:true},
-    {name:"Camila", available:false},
-    {name:"Jessica", available:true}
+// //arrow functions
+// const sum = function(a,b){
+//     return a + b 
+// }
+
+
+// //com arrow
+
+// const Arrowsum = (a, b) => a+b
+
+// console.log(sum(5,5))
+// console.log(Arrowsum(5,5));
+
+// const greeting = (name) =>{
+
+
+//     if(name) {
+//         return `Hello ${name}`
+//     }else{
+//         return `Hello`
+//     }
+// }
+// console.log(greeting("Sophia"));
+
+// console.log(greeting());
+
+// const user = {
+//     name :"Theo", 
+//     sayUserName(){
+//         setTimeout(function(){
+//             console.log(this);
+//             console.log(`Username:${this.name}`)
+//         },1000)
+//     },
+//     sayUserNameArrow(){
+//         setTimeout(()=>{
+//             console.log(this);
+//             console.log(`Username:${this.name}`)
+
+//         }, 2000)
+//     }
+// }
+
+// //filter
+
+// const arr = [1, 2, 3, 4, 5, 6]
+
+
+// const highNumber = arr.filter((n) =>{
+
+//     if(n>3){{
+//         return n 
+//     }}
+// })
+
+// console.log(highNumber)
+
+
+
+// const users = [
+//     {name:"Sophia", available:true},
+//     {name:"Maria", available:false},
+//     {name:"Joao", available:true},
+//     {name:"Camila", available:false},
+//     {name:"Jessica", available:true}
+// ]
+
+// const avalibleUsers = users.filter((user)=> user.available)
+
+// console.log(avalibleUsers)
+
+
+//map
+
+const products =[
+    {name:"Camisa", price:10.99, category:"Roupas"},
+    {name:"Fogao", price:499, category:"Eletro"},
+    {name:"Chaleira Eleitrica", price:109 ,category:"Eletro"},
+    {name:"Calça Jeans", price:32.99, category:"Roupas"},
+ 
 ]
 
-const avalibleUsers = users.filter((user)=> user.available)
+products.map((product)=>{
+    if(product.category === "Roupas"){
+       product.onSale = true 
+    }
+})
 
-console.log(avalibleUsers)
+console.log(products)
+
+
+//template literals
+
+
+const userName = 'Sophia'
+const idade = 19;
+
+console.log(`O nome do usuario e´${userName} e sua idade é ${idade}`)
