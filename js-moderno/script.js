@@ -59,3 +59,31 @@ const user = {
         }, 2000)
     }
 }
+
+//filter
+
+const arr = [1, 2, 3, 4, 5, 6]
+
+
+const highNumber = arr.filter((n) =>{
+
+    if(n>3){{
+        return n 
+    }}
+})
+
+console.log(highNumber)
+
+
+
+const users = [
+    {name:"Sophia", available:true},
+    {name:"Maria", available:false},
+    {name:"Joao", available:true},
+    {name:"Camila", available:false},
+    {name:"Jessica", available:true}
+]
+
+const avalibleUsers = users.filter((user)=> user.available)
+
+console.log(avalibleUsers)
